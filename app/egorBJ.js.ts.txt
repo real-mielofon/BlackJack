@@ -1,0 +1,83 @@
+"use strict";
+
+
+function PlayBJ() {
+	var dealer = [getCard()];
+	var player = [getCard(), getCard()];
+	
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function getCard() {
+		var cards = ['6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+		return cards[getRandomInt(0, cards.length - 1)];
+	}
+
+	function getSum(arr) {
+		var sum = 0;
+		var card;
+
+		for (var i = 0; i < arr.length; i++) {
+			card = arr[i];
+			if (card != 'A') {
+				if (card == 'J' || card == 'Q' || card == 'K') {
+					sum = sum + 10;
+				} else {
+					sum = sum + parseInt(card);
+				}
+			}
+
+		}
+		for (i = 0; i < arr.length; i++) {
+			card = arr[i];
+			if (card == 'A') {
+				if (sum > 10) {
+					sum = sum + 1;
+				} else {
+					sum = sum + 11;
+				}
+			}
+		}
+		return sum;
+	}
+
+	function getStatus() {
+		return 'Дилер: ' + dealer.join(' ') + ' Игрок: ' + player.join(' ') + '.';
+	}
+	
+	var answer = '';
+	if (getSum(player) == 21) {
+		alert('У вас блек-джек, вы победили!');
+		return;
+	} else {
+		do {
+			answer = prompt(getStatus() + 'Хотите еще карту? 1 - да, иначе - нет');
+			if (answer == '1') {
+				player.push(getCard());
+				alert(getStatus());
+				if (getSum(player) > 21) {
+					alert('Вы проиграли!');
+					return;
+				}
+			}
+		} while (answer == '1');
+
+		if (getSum(player) == 21) {
+			alert('У вас блек-джек, вы победили!');
+			return;
+		}
+		while (getSum(dealer) < 21 || getSum(dealer) < getSum(player)) {
+			dealer.push(getCard());
+		}
+		if (getSum(player) == getSum(dealer)) {
+			alert('Пуш! Ничья')
+		} else if (getSum(dealer) > getSum(player)) {
+			alert('Вы победили!');
+		} else if (getSum(dealer) <= 21) {
+			alert('Победил диллер!');
+		}
+
+	}
+}
+playBJ(); 

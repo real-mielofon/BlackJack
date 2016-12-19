@@ -1,0 +1,566 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getCard\twindow"
+			],
+			[
+				"Pars",
+				"parseInt\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 767,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.component.ts",
+			"settings":
+			{
+				"buffer_size": 436,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.component.spec.ts",
+			"settings":
+			{
+				"buffer_size": 962,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/cards.ts",
+			"settings":
+			{
+				"buffer_size": 688,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".sublime-project",
+			"settings":
+			{
+				"buffer_size": 173,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "{"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nJavaScript Completions\n----------------------\n\n  JavaScript Completions Package\n  ===============================\n  \n  How To USE\n  ==========\n  \n  To try it, just write.\n  \n  If you like this plugin, \"Star\" it on ---> https://github.com/pichillilorenzo/JavaScript-Completions <---\n  \n  jQuery and NativeScript completions disabled by default!\n  You can enable them on Preferences -> Package Settings -> JavaScript Completions.\n  \n  Some features could use npm!\n  \n  In Windows you must install it! Download it from https://nodejs.org.\n  To OSX and Linux, it will be downloaded automatically with nodejs.\n  \n  Features list:\n  - \"Find JavaScript Description\" Feature\n  - \"On Hover Description\" Feature\n  - \"Evaluate JavaScript\" Feature\n  - \"Can I use?\" Feature\n  - \"JSDoc\" Feature\n  - Context menu options\n  \n  \n  ENABLE or DISABLE completions\n  =============================\n  \n  You can ENABLE or DISABLE completions! Just go to Preferences -> Package Settings -> JavaScript Completions\n  \n  \n  \"Find JavaScript Description\" Feature\n  =====================================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  key-map of this feature disabled by default!\n  \n  You can check the description of function/property/method by selecting the word (or, in case, it will take the first word near the blinking cursor) you want find. \n  \"right-click\" on your mouse and click on \"Find JavaScript Description\".\n  It will show a popup with the list of possible descriptions or, in some case, the direct description. \n  \n  In case, you can also use \"key-map\"! Just go to Preferences -> Package Settings -> JavaScript Completions and enable it.\n  \n  \"On Hover Description\" Feature\n  ==============================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  Just put the cursor over a name of a function, property or constructor and it will appear a little popup with all matching found from the \"/sublime-completions\" list enabled. \n  \n  - F = function\n  - P = property\n  - C = constructor\n  \n  \n  \"Evaluate JavaScript\" Feature\n  =============================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  This feature uses node.js (v6.6.0) executable.\n  You can change the node version on Preferences -> Package Settings -> Evaluate JavaScript settings\n  \n  It will download automaticaly the binary for your OS.\n  A message will appear on the \"status bar\" of Sublime Text.\n  \n  context menu option of this feature disabled by default!\n  key-map of this feature disabled by default!\n  \n  You can evaluate the entire text selection or the current line! \n  If you select a text region and evaluate it, in the gutter of the editor will appear 2 white dots.\n  The first white dot represents the start of the region and the second white dot represents the end of the region.\n  You can eventually modify the region and, without reselect the same region, you can evaluate it again! \n  If you want hide this 2 dots, there is an entry on the context menu \"Evaluate JavaScript\".\n  \n  When you evaluate code, this plugin will prepend \"use strict\"; automaticaly!\n  \n  There are two main mode to evaluate code:\n  - eval, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_e_eval_script\n  - print, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_p_print_script\n  \n  To enable this feature on context menu, go to Preferences -> Package Settings -> Evaluate JavaScript and enable it.\n  In case, you can also use \"key-map\"! Just go to Preferences -> Package Settings -> Evaluate JavaScript and enable it.\n  \n  \n  \"Can I use?\" Feature\n  ====================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  This feature uses \"can i use\" json data from this repository: https://github.com/Fyrd/caniuse, that contains raw data from the http://caniuse.com support tables.\n  Thanks to @Fyrd.\n  \n  You can use this feature in HTML, CSS and JavaScript context!\n  Just put the cursor on the word you want to check, \"right-click\" -> \"Can I use?\" and it will appear an input panel with all items that have a name matching with the word.\n  You can use key-map: ctrl+alt+w. You can also change it. Just go to Preferences -> Package Settings ->  JavaScript Completions Tools -> Key Bindings - User.\n  After selecting an item from the list, it will appear a popup with all information from the http://caniuse.com support tables.\n  You can also use the menu \"JavaScript Completions Tools\" on the top and select 'Search on \"Can I use\" list' to search what you want.\n  \n  \n  \"JSDoc\" Feature\n  ===============\n  \n  Supported only by Sublime Text 3\n  \n  Requires npm\n  \n  This feature uses https://github.com/jsdoc3/jsdoc to generate API documentation.\n  \n  You can find it under \"JavaScript Completions Tools\" menu -> JSDoc.\n  \n  There are 2 main menu items:\n  - Generate Documentation\n  - Add jsdoc-settings.json to the current project folder\n  \n  These items can be used only with a project folder opened.\n  \"Generate Documentation\" uses the jsdoc command line to generate documentation.\n  It uses jsdoc-settings.json file for configuration or, alternately, it will use default configuration.\n  The options (with default values) availables are:\n  {\n    \"jsdoc_conf_file\": \"conf.json\",\n    \"destination_folder\": \"out\",\n    \"display_symbols_access_property\": \"all\",\n    \"search_within_subdirectories\": false,\n    \"encoding_when_reading_all_source_files\": \"utf-8\",\n    \"template_path\": \"\",\n    \"tutorials_path\": \"\",\n    \"include_symbols_marked_with_the_private_tag\": false,\n    \"pedantic_mode\": false,\n    \"query_string_to_parse_and_store_in_global_variable\": \"\"\n  }\n  \n  \"Add jsdoc-settings.json to the current project folder\" will add a jsdoc-settings.json file with default values to the current project folder.\n  \n  How to use JSDoc: http://usejsdoc.org/\n  \n  \n  Context menu options\n  ====================\n  \n  Context menu options:\n  - Surround With\n  - Delete Surrounded\n  - Create Class from object literal\n  - Sort array\n  - Split string lines to variable\n  \n  ## Surround With ##\n  \n  You MUST first select text to \"enable\" these options.\n  \n  You can surround code with:\n  - if statement\n  - if else statement (this works only if you selected 2 regions)\n  - while statement\n  - do while statement\n  - for statement\n  - try catch statement\n  - try catch finally statement\n  - Multi-line comment\n  - Single-line comment\n  \n  This option works also on multiple selections at once.\n  \n  ## Delete Surrounded ##\n  \n  Options are:\n  - Delete multi-line comment\n  - Delete single-line comment\n  - Strip quoted string\n  \n  This option works also on multiple selections at once.\n  \n  ## Create Class from object literal ##\n  \n  This option create a JavaScript Class from an object literal (Constructor with all setter and getter for each field).\n  You can set default values or use the string \"required\" to say that a field hasn't a default value.\n  To work properly, you MUST declare a variable and assign an object literal to it, like this example:\n  \n  var Person = {\n    name: \"required\",\n    surname: \"required\",\n    email: \"\",\n    age: 18\n  }\n  \n  This option works also on multiple selections at once.\n  \n  ## Sort array ##\n  \n  Just put the cursor between brackets and will appear a menu with these options:\n  - Sort array ASC ( compare function: function(x,y){return x-y;} )\n  - Sort array DESC ( compare function: function(x,y){return y-x;} )\n  - Sort array alphabetically ASC\n  - Sort array alphabetically DESC\n  \n  This option works also on multiple selections at once.\n  \n  ## Split string lines to variable ##\n  \n  Just put the cursor between a string with multiple lines and this option will appear in the context menu.\n  It will split the string and for each line will be concatenated to a variable named \"str\".\n  This option works also on multiple selections at once.\n  \n  MIT License\n\n\nnpm\n---\n\n  sublime-text-npm\n  ================\n  \n  npm commands within Sublime Text (v3)\n  \n  [Git integration](https://github.com/kemayo/sublime-text-git) is handy, so why not [npm](https://www.npmjs.org/) too?\n  \n  Installation\n  ============\n  \n  1. Install [node and npm](http://nodejs.org/) on your machine\n  2. Install [Package Control](https://sublime.wbond.net/installation) in Sublime Text\n  3. Open the \"[Command Pallet](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/command_palette.html#command-palette)\" (<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> or <kbd>⌘</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>)\n  4. type \"pkgctlinspkg\" (for \"Package Control: Install Package\" ;-)\n  5. type \"[npm](https://sublime.wbond.net/packages/npm)\"\n  6. Tah-dah!\n  \n  Usage\n  =====\n  \n  1. Open a file (usually a *.js or *.coffee) in your npm project/package\n  2. <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> or <kbd>⌘</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>\n  3. Type `npm: ` to see all npm commands\n  4. Press <kbd>Enter</kbd> to invoke the selected command. The npm command will be run in the directory of your focused file.\n  \n  Commands Implemented\n  ====================\n  \n  If you don't see your favorite here, please [file an issue](https://github.com/PixnBits/sublime-text-npm/issues).\n  \n  [Install](https://www.npmjs.org/doc/cli/npm-install.html):\n  \n  * Install Saved Packages: `npm install`\n  * Install Package: `npm install <pkg name>`\n  * Install and Save Package: `npm install <pkg name> --save`\n  * Install and Save Development Package: `npm install <pkg name> --save-dev`\n  \n  [Uninstall]():\n  \n  * Remove/Uninstall Package: `npm rm`\n  * Remove/Uninstall Saved Package: `npm rm --save --save-dev -save-optional`\n  \n  [List](https://www.npmjs.org/doc/cli/npm-ls.html):\n  \n  * List Installed Packages: `npm list --depth 0`\n  * List Installed Packages, Deep: `npm list`\n  \n  [Outdated](https://docs.npmjs.com/cli/outdated):\n  \n  * Check for outdated packages: `npm outdated`\n  \n  [Run](https://docs.npmjs.com/cli/run-script):\n  \n  * Run Script: `npm run <script>`\n  \n  [Update](https://www.npmjs.org/doc/cli/npm-update.html):\n  \n  * Update Local Packages: `npm update` or `npm update <name>`\n  \n  [Search](https://www.npmjs.org/doc/cli/npm-search.html):\n  \n  * Search Packages: `npm search <name>`\n  \n  [Link](https://www.npmjs.org/doc/cli/npm-link.html):\n  \n  * Register this Package for Linking: `npm link`\n  * Link Package Here: `npm link <name>`\n  \n  [Test](https://docs.npmjs.com/cli/test):\n  \n  * Test a package: `npm test`\n  \n  Run Arbitrary:\n  \n  * Run something not covered here (basically, `npm <whatever your input was>`)\n\n\nMarkdown Preview\n----------------\n\n  Sublime Text 2/3 Markdown Preview\n  =================================\n  \n  Preview and build your markdown files quickly in your web browser from sublime text 2/3. \n  \n  You can use builtin [python-markdown][10] parser or use the [github markdown API][5] for the conversion.\n  \n  **NOTE:** If you choose the GitHub API for conversion (set parser: github in your settings), your code will be sent through https to github for live conversion. You'll have [Github flavored markdown][6], syntax highlighting and EMOJI support for free :heart: :octocat: :gift:. If you make more than 60 calls a day, be sure to set your GitHub API key in the settings :). You can also get most of this in the default Markdown parser with by enabling certain extensions; see \"[Parsing Github Flavored Markdown](#parsing-github-flavored-markdown-)\"\" below for more information.\n  \n  **LINUX users:** If you want to use GitHub API for conversion, you'll need to have a custom Python install that includes python-ssl as its not built in the Sublime Text 2 Linux package. see [@dusteye comment][8]. If you use a custom window manager, also be sure to set a `BROWSER` environment variable. see [@PPvG comments][9]\n  \n  ## Features :\n  \n   - Markdown preview using the [Python-markdown][10] or the Github API just choose select the build commands.\n   - Syntax highlighting via Pygments. See \"[Configuring Pygments](#configuring-pygments)\" for more info.\n   - Build markdown file using Sublime Text build system. The build parser are config via the `\"parser\"` config.\n   - Browser preview auto reload on save if you have the [ST2 LiveReload plugin][7] installed.\n   - Builtin parser : supports `abbr`, `attr_list`, `def_list`, `fenced_code`, `footnotes`, `tables`, `smart_strong`, `smarty`,  `wikilinks`, `meta`, `sane_lists`, `codehilite`, `nl2br`, and `toc` markdown extensions.\n   - CSS search path for local and build-in CSS files (always enabled) and/or CSS overriding if you need\n   - YAML support thanks to @tommi\n   - Clipboard selection and copy to clipboard thanks to @hexatrope\n   - MathJax support : \\\\\\\\(\\frac{\\pi}{2}\\\\\\\\) thanks to @bps10\n   - HTML template customisation thanks to @hozaka\n   - Embed images as base64 (see [settings][settings] file for more info)\n   - Strip out multimarkdown critic marks from either Githubs or Python Markdown input source (see [settings][settings] file for more info)\n   - 3rd party extensions for the Python Markdown parser:\n  \n      | Extension | Documentation |\n      |-----------|---------------|\n      | magiclink | Find and convert HTML links and email address to links ([MagicLink Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)). |\n      | delete | Surround inline text with `~~strike through~~` to get del tags ~~strike through~~. |\n      | insert | Surround inline text with `^^underlined^^` to get ins tags <ins>underlined</ins>. |\n      | tasklist | Github Flavored Markdown tasklists ([Tasklist Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/tasklist/)). |\n      | githubemoji | Support for Github Flavored Markdown emojis ([GithubEmoji Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/githubemoji/)). |\n      | headeranchor | Github Flavored Markdown style header anchors ([HeaderAnchor Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/headeranchor/)). |\n      | github | A convenience extension to add: `magiclink`, `delete`, `tasklist`, `githubemoji`, `headeranchor`, `superfences`, and `nl2br` to parse and display Markdown in a github-ish way.  It is recommed to pair `github` with `extra` and `codehilite` (with language guessing off) to parse close to github's way.  Be aware of what extensions `github` loads, because you should not load extensions more than once. |\n      | progressbar | Create progress bars ([ProgressBar Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/progressbar/)). |\n      | superfences | Allow fenced blocks to be nested under lists, blockquotes, etc. and add special UML diagram blocks ([SuperFences Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/superfences/)). |\n  \n  ## Installation :\n  \n  ### Using [Package Control][3] (*Recommended*)\n  \n  For all Sublime Text 2/3 users we recommend install via [Package Control][3].\n  \n  1. [Install][11] Package Control if you haven't yet.\n  2. Use <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then `Package Control: Install Package`\n  3. Look for `Markdown Preview` and install it.\n  \n  ### Manual Install\n  \n  1. Click the `Preferences > Browse Packages…` menu\n  2. Browse up a folder and then into the `Installed Packages/` folder\n  3. Download [zip package][12] rename it to `Markdown Preview.sublime-package` and copy it into the `Installed Packages/` directory\n  4. Restart Sublime Text\n  \n  ## Usage :\n  \n  ### To preview :\n  \n   - optionally select some of your markdown for conversion\n   - use <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then `Markdown Preview` to show the follow commands (you will be prompted to select which parser you prefer):\n  \t- Markdown Preview: Preview in Browser\n  \t- Markdown Preview: Export HTML in Sublime Text\n  \t- Markdown Preview: Copy to Clipboard\n  \t- Markdown Preview: Open Markdown Cheat sheet\n   - or bind some key in your user key binding, using a line like this one:\n     `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview\", \"args\": {\"target\": \"browser\", \"parser\":\"markdown\"} },` for a specific parser and target or `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview_select\", \"args\": {\"target\": \"browser\"} },` to bring up the quick panel to select enabled parsers for a given target.\n   - once converted a first time, the output HTML will be updated on each file save (with LiveReload plugin)\n  \n  ### Enabling Other External Markdown Parsers :\n  \n  External parser commands and arguments should first be mapped to a name.  The path to the binary should be first, followed by flags etc.\n  \n  ```js\n      \"markdown_binary_map\": {\n          \"multimarkdown\": [\"/usr/local/bin/multimarkdown\"]\n      },\n  ```\n  \n  Then the name can be placed in `enabled_parsers` to enable use of the new parser.\n  \n  ```js\n      \"enabled_parsers\": [\"markdown\", \"github\", \"multimarkdown\"],\n  ```\n  \n  ### To build :\n  \n   - Just use <kbd>ctrl</kbd>+<kbd>B</kbd> (Windows/Linux) or <kbd>cmd</kbd>+<kbd>B</kbd> (Mac) to build current file.\n  \n  ### To config :\n  \n  Using Sublime Text menu: `Preferences`->`Package Settings`->`Markdown Preview`\n  \n  - `Settings - User` is where you change your settings for Markdown Preview.\n  - `Settings - Default` is a good reference with detailed descriptions for each setting.\n  \n  ### Configuring Pygments\n  If you add the codehilite extension manually in the enabled extensions, you can override some of the default settings.\n  \n  * Turn language guessing *on* or *off* (*on* will highlight fenced blocks even if you don't specify a language)  `codehilite(guess_lang=False)` (True|False).\n  * Show line numbers: `codehilite(linenums=True)` (True|False).\n  * Change the higlight theme: `codehilite(pygments_style=emacs)`.\n  * Inline the CSS: `codehilite(noclasses=True)` (True|False).\n  * Use multiple: `codehilite(linenums=True, pygments_style-emacs)`.\n  \n  See [codehilte page](https://pythonhosted.org/Markdown/extensions/code_hilite.html) for more info.\n  \n  ### Meta Data Support\n  When the `meta` extension is enabled (https://pythonhosted.org/Markdown/extensions/meta_data.html), the results will be written to the HTML head in the form `<meta name=\"key\" content=\"value1,value2\">`.  `title` is the one exception, and its content will be written to the title tag in the HTML head.\n  \n  ### YAML Frontmatter Support\n  YAML frontmatter can be stripped out and read when `strip_yaml_front_matter` is set to  `true` in the settings file.  In general the, the fronmatter is handled the same as [meta data](#meta-data-support), but if both exist in a file, the YAML keys will override the `meta` extension keys.  There are a few special keys names that won't be handled as html meta data.\n  \n  #### Special YAML Key Names\n  Yaml frontmatter has a few special key names that are used that will not be handled as meta data:\n  \n  - **basepath**: An absolute path to configure the relative paths for images etc. (for when the markdown is supposed to reference images in a different location.)\n  - **references**: Can take a file path or an array of file paths for separate markdown files containing references, footnotes, etc.  Can be an absolute path or relative path.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **destination**: This is an absolute file path or relative file path for when the markdown is saved to html via the build command or the `Save to HTML` command.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **settings**: This is a dictionary where you can override settings that are in the settings file.\n  \n  #### Example\n  ```yaml\n  ---\n      # Builtin values\n      references:\n          - references.md\n          - abbreviations.md\n          - footnotes.md\n  \n      destination: destination.html\n  \n      # Meta Data\n      title: Test Page\n      author:\n          - John Doe\n          - Jane Doe\n  \n      # Settings overrides\n      settings:\n          enabled_extensions:\n          - extra\n          - github\n          - toc\n          - headerid\n          - smarty(smart_quotes=False) # smart quotes interferes with attr_list\n          - meta\n          - wikilinks\n          - admonition\n          - codehilite(guess_lang=False,pygments_style=github)\n  ---\n  ```\n  \n  ### Parsing Github Flavored Markdown :\n  Github Flavored Mardown (GFM) is a very popular markdown.  Markdown Preview can actually handle them in a couple of ways: online and offline.\n  \n  #### Online :\n  Parsing GFM using the online method requires using the Github API as the parser.  It may also require setting `github_mode` to `gfm` to get things like tasklists to render properly. You can set your API key in the settings as follows:\n  \n  ```js\n      \"github_oauth_token\": \"secret\"\n  ```\n  \n  #### Offline :\n  By default almost all extensions are enabled to help with the github feel, but there are some tweaks needed to get the full experience.\n  \n  GFM does not auto guess language in fenced blocks, but Markdown Preview does this by default.  You can fix this in one of two ways:\n  \n  1. Disable auto language guessing in the settings file `\"guess_language\": false,`\n  2. Or if you are manually defining extensions: `\"enabled_extensions\": [\"codehilite(guess_lang=False,pygments_style=github)\"]`\n  \n  \n  As mentioned earlier, almost all extensions are enabled by default, but as a reference, the minimum extensions that should be enabled are listed below:\n  \n  ```javascript\n  \t\"enabled_extensions\": [\n  \t\t\"extra\",\n  \t\t\"github\",\n  \t\t\"codehilite(guess_lang=False,pygments_style=github)\"\n  \t]\n  ```\n  \n  This may be further enhanced in the future.\n  \n  \n  ## Support :\n  \n  - Any bugs about Markdown Preview please feel free to report [here][issue].\n  - And you are welcome to fork and submit pullrequests.\n  \n  \n  ## License :\n  \n  The code is available at github [project][home] under [MIT licence][4].\n  \n   [home]: https://github.com/revolunet/sublimetext-markdown-preview\n   [3]: https://packagecontrol.io/\n   [4]: http://revolunet.mit-license.org\n   [5]: https://developer.github.com/v3/markdown/\n   [6]: https://help.github.com/articles/github-flavored-markdown/\n   [7]: https://github.com/dz0ny/LiveReload-sublimetext2\n   [8]: https://github.com/revolunet/sublimetext-markdown-preview/issues/27#issuecomment-11772098\n   [9]: https://github.com/revolunet/sublimetext-markdown-preview/issues/78#issuecomment-15644727\n   [10]: https://github.com/waylan/Python-Markdown\n   [11]: https://packagecontrol.io/installation\n   [12]: https://github.com/revolunet/sublimetext-markdown-preview/archive/master.zip\n   [issue]: https://github.com/revolunet/sublimetext-markdown-preview/issues\n   [settings]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.sublime-settings\n",
+			"settings":
+			{
+				"buffer_size": 22878,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/Alexey/AppData/Roaming/Sublime Text 3/Packages/User/npm.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 96,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n    // Custom path to npm when not in PATH\n    \"path_to_npm\": \"\"\n}\n",
+			"file": "/C/Users/Alexey/AppData/Roaming/Sublime Text 3/Packages/npm/npm.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "npm:",
+		"selected_items":
+		[
+			[
+				"npm:",
+				"npm: List Installed Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 332.0,
+		"history":
+		[
+			"npm",
+			"npm: ",
+			"npm update"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/workspace/Angular2/Poker",
+		"/D/workspace/Angular2/Poker/app",
+		"/D/workspace/Angular2/Poker/e2e"
+	],
+	"file_history":
+	[
+		"/D/workspace/Angular2/Poker/app/egorBJ.js.ts"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								747,
+								747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/app.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/app.component.spec.ts",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/cards.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": ".sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								21
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6264,
+								6264
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3165.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Alexey/AppData/Roaming/Sublime Text 3/Packages/User/npm.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Alexey/AppData/Roaming/Sublime Text 3/Packages/npm/npm.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": ".sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
