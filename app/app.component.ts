@@ -1,19 +1,29 @@
 import { Component } from '@angular/core';
-import { CardComponent, Card, Cards } from './cards';
+import { CardComponent, CardsComponent, Card, CardDeck} from './cards';
 
 @Component({
   selector: 'BlackJack',
-  template: `<h1>{{name}}</h1> {{currentCard.suit}} {{currentCard.rank}}  <card [card] = "currentCard"> </card>`,
+  template: `
+  <h1>Крупье</h1> 
+    <cards [cards]=croupierCards> </cards>
+  <h1>Игрок</h1> 
+    <cards [cards]=gamerCars ds> </cards>`
+    ,
 })
 
 
 export class AppComponent  { 
-	name = 'Black Jack'; 
-	cards: Cards;
-	currentCard: Card;
+	cardDeck: CardDeck;
+
+	croupierCards: Array<Card>;
+	gamerCards: Array<Card>;
 
 	constructor(){
-		this.cards = new Cards();
-		this.currentCard = this.cards.getCard();
+		this.cardDeck = new CardDeck();
+
+		this.croupierCards.push(this.cardDeck.getCard());
+
+		this.gamerCards.push(this.cardDeck.getCard());
+		this.gamerCards.push(this.cardDeck.getCard());
 	}
 }

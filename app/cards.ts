@@ -1,10 +1,12 @@
 enum Suit {Hearts = 0, Diamonds, Clubs, Spades};
 
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit  } from '@angular/core';
+
 
 @Component({
   selector: 'card',
-  template: `<div *ngIf = "card">{{card.suitText}}: {{card.rank}}<div>`,
+  template: `<div class="card {{card.suitColor}}" *ngIf = "card">{{card.rank}}{{card.suitText}}<div>`,
+  styles: ['.Red { color: red}', '.Black { color: Black}']
 })
 export class CardComponent{
 	 @Input()
@@ -36,16 +38,39 @@ export class Card{
 	}
 }
 
-export class Cards {
+@Component({
+  selector: 'cards',
+  template: `
+<div class="cards" *ngIf = "cards.length > 0">
+            <table class="table-bordered" id="" style="">
+                <tbody>
+                    <tr>
+                        <td *ngFor="let card of cards">{{card}}</td>
+                    </tr>
+                </tbody>
+            </table>
+</div>
+
+  <div class="card {{card.suitColor}}" *ngIf = "card">{{card.rank}}{{card.suitText}}<div>`,
+  styles: ['.Red { color: red}', '.Black { color: Black}']
+})
+export class CardsComponent {
+	@Input()
+	cards: Array<Card>;
+}
+
+
+export class CardDeck  implements OnInit{
 	ranks:string[] = [];
 	
 	constructor (){
+	}
+    ngOnInit() {
 		for(let i= 2; i <10; i++){
 			this.ranks = this.ranks.concat(i.toString());
 		}
 		this.ranks = this.ranks.concat( 'J', 'Q', 'K', 'A');
-		Math.
-	}
+  	}
 
 	getCard(): Card {
 		return new Card( Suit[(Math.random()*4).toString()], this.ranks[Math.random()*this.ranks.length]);
